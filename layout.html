@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GEN-Y</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="full">
+            <div class="element">
+                <h1 class="header">Gen-Y</h1>
+            </div>
+            <div class="contain">
+                <div style="height:4%;">
+                    <div class="head">
+                        <h4 id="qnum"></h4>
+                    </div>
+                    <div style="margin-right: 12%; text-align:right; float:right;">
+                        <h2 id="counter">10:00</h2>
+                    </div>
+                </div> 
+                <div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="myBar"></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="scrollmenu" id="scroll">
+                <button class="count" data-num="1">
+                    <b>1</b>
+                </button>  
+                <button class="count" data-num="2">
+                    <b>2</b>
+                </button>  
+                <button class="count" data-num="3">
+                    <b>3</b>
+                </button>  
+                <button class="count" data-num="4">
+                    <b>4</b>
+                </button>  
+                <button class="count" data-num="5">
+                    <b>5</b>
+                </button>  
+                <button class="count" data-num="6">
+                    <b>6</b>
+                </button>  
+                <button class="count" data-num="7">
+                    <b>7</b>
+                </button>  
+                <button class="count" data-num="8">
+                    <b>8</b>
+                </button>  
+                <button class="count" data-num="9">
+                    <b>9</b>
+                </button>  
+                <button class="count" data-num="10">
+                    <b>10</b>
+                </button>  
+                <button class="count" data-num="11">
+                    <b>11</b>
+                </button>  
+                <button class="count" data-num="12">
+                    <b>12</b>
+                </button>  
+                <button class="count" data-num="13">
+                    <b>13</b>
+                </button>  
+                <button class="count" data-num="14">
+                    <b>14</b>
+                </button>  
+                <button class="count" data-num="15">
+                    <b>15</b>
+                </button>   
+            </div>
+            <div class="questions" id="btn">
+                <h1 class="number"><b>Question 1</b></h1>
+                <div class="label"><b><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor tellus vel nulla maximus, eu accumsan justo luctus. Pellentesque libero turpis, fringilla in gravida vitae, ultrices eget velit?</span></b></div><br><br>
+                <div class="option_list">
+                    <div class="style1">
+                        <div class="abc">
+                            <button class="button">
+                                <b>A.&nbsp;</b>
+                                <span class="option" data-number="1"> Lorem ipsum dolor sit amet</span>
+                            </button><br>
+                        </div>
+                    </div>
+                    <div class="style2">
+                        <div class="abc">
+                            <button class="button"><b>B.&nbsp;</b><span class="option" data-number="2"> Lorem ipsum dolor sit amet</span></button>
+                        </div>
+                    </div>
+                    <div class="style1">
+                        <div class="abc">
+                            <button class="button"><b>C.&nbsp;</b><span class="option" data-number="3"> Lorem ipsum dolor sit amet</span></button><br>
+                        </div>
+                    </div>
+                    <div class="style2">
+                        <div class="abc">
+                        <button class="button"><b>D.&nbsp;</b><span class="option" data-number="4"> Lorem ipsum dolor sit amet</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav">
+                <div class="nav1">
+                    <div><Button id="button" class="buttons" id="#skip" style="float:left; padding: 0%;" onclick="getNewQuestion()"><b>SKIP ></b></Button></div>
+                    <div><Button id="button" class="buttons more" style="float:right; padding: 0%;"><b>REMARK ></b></Button></div>
+                </div>
+                <div class="nav2">
+                    <Button id="button" class="buttons" id = "#next" style="padding: 0%;" onclick="getNewQuestion()"><b>NEXT ></b></Button>
+                </div>
+            </div>   
+        </div>
+        <script src="myscript.js"></script>
+        <script>
+            var btnContainer = document.getElementById("btn");
+            var btns = btnContainer.getElementsByClassName("button");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName(" active");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace(" active", "");
+                    }
+                    this.className += " active";
+                });
+            }
+        </script>
+        <script>
+            var container = document.getElementById("scroll");
+             var btn = container.getElementsByClassName("count");
+             for (var i = 0; i < btn.length; i++) {
+                 btn[i].addEventListener("click", function() {
+                     var current = document.getElementsByClassName(" act");
+                     if (current.length > 0) {
+                         current[0].className = current[0].className.replace(" act", "");
+                     }
+                     this.className += " act";
+                 });
+           }
+        </script>
+    </body>
+</html>

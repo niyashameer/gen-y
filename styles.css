@@ -1,0 +1,321 @@
+.full
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.element
+{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    padding: 0;
+    z-index: 2;
+    height: 12%;
+    width: 100%;
+    background-color: #292059;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+        
+.contain
+{
+    background-color: #eff3ff;
+    color: #292059;
+    top:12%;
+    width: 100%;
+    height:12%;
+    position: absolute;
+    z-index:2;
+}
+
+.head
+{
+    margin-left: 20%; 
+    float:left; 
+    height: 1%;
+}
+
+#qnum{
+    margin-top: 6%; 
+    align-items: center;
+}
+
+
+.progress-container 
+{
+    position: absolute;
+    top:50%;
+    margin-left: 5%;
+    width: 40%;
+    height: 30px;
+    background:white;
+}
+  
+.progress-bar 
+{
+    height: 30px;
+    background: #74ed3e;
+    width: 0%;
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 90%; 
+    height: 50px; 
+    width: 100%;
+}
+
+.nav1
+{ 
+    margin-left:10%; 
+    width: 30%;
+    float: left;
+}
+
+.nav2
+{
+    margin-right: 10%; 
+    margin-left: 15%;
+    float: right;
+}
+
+.more
+{
+    margin-right:0%;
+}
+
+.buttons
+{
+    background-color:  #a0a1ca;
+    color: white;
+    letter-spacing: 3px;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.buttons:hover{
+    background-color: #292059;
+    color: white;
+    transform: scale(1.09);
+    transition: transform 100ms;
+}
+
+.scrollmenu {
+    white-space: nowrap;
+    margin-left: 22%;
+    position: absolute;
+    top:25%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.count {
+    background-color: #eff3ff;
+    color: #292059;
+    display: inline-block;
+    margin-top: 1%;
+    text-align: center;
+    line-height: 40px ;
+    margin-right: 2%;
+    border-style: none;
+    cursor: pointer;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+  }
+
+.act, .count:hover {
+    background-color: #292059;
+    color: white;
+    transform: scale(1.09);
+    transition: transform 100ms;
+  }
+
+.questions
+{
+    background-color: white;
+    color: #292059;
+    position: absolute;
+    top: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.label
+{
+    font-size: 17px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+.option_list
+{
+    display: flexbox;
+    align-items: left;
+    justify-content: left;
+}
+.button
+{
+    border-color: #eff3ff;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    color:  #292059;
+    height: 40px;
+    width: 350px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+}
+
+.active, button:hover {
+    transform: scale(1.02);
+    transition: transform 100ms;
+    background-color: #74ed31;
+    border-color: #51962c;
+    color: #292059;
+}
+
+
+.style1
+{
+    float: left;
+}
+
+.style2
+{
+    margin-right: 30%;
+    float: right;
+}
+
+@media screen and (max-width: 480px)
+{
+    .style2{
+        float: left;
+        margin-right: auto;
+    }
+    .questions{
+        top:41%;
+        font-size: 14px;
+    }
+    .button
+    {
+        border-radius: 5px;
+        height: 30px;
+        width: 300px;
+        font-size: 14px;
+    }
+    .label{
+        font-size: 13px;
+    }
+    .nav1{
+        margin-left: 1%;
+        width: 62%;
+    }
+    .nav2{
+        float: right;
+        margin-right: 1%;
+    }
+    .head{
+        margin-left: 4.2%; 
+        float:left; 
+        height: 30px;
+    }
+    #qnum{
+        margin-left: 0%;
+        align-items: center;
+    }
+    .header{
+        margin-top: 3%;
+    }
+    .scrollmenu{
+        overflow: scroll;
+        margin-left: 1%;
+        margin-right:1%;
+        scrollbar-width: auto;
+        width: 100%;
+        height: 60px;
+    }
+    .buttons{
+        height: 30px;
+        width: 85px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 5px;
+        letter-spacing: normal;
+    }
+    .more{
+        width: 100px;
+    }
+    .element h1{
+        margin:6%;
+    }
+}
+
+@media screen and (max-height: 599px) and (max-width:400px)
+{
+    .questions{
+        font-size: 8px;
+    }
+    .button
+    {
+        border-radius: 5px;
+        height: 20px;
+        width: 150px;
+        font-size: 8px;
+    }
+    .label{
+        font-size: 7px;
+    }
+    .progress-container 
+    {
+        width: 40%;
+        height: 20px;
+        background:white;
+    }
+  
+    .progress-bar 
+    {
+        height: 20px;
+        background: #74ed3e;
+        width: 5%;
+    }
+    .head h4{
+        font-size: 12px;
+    }
+    .contain h2{
+        font-size: 12px;
+    }
+
+}
